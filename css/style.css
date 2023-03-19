@@ -1,0 +1,117 @@
+@import './marvelopedia.min.css';
+
+
+:root {
+    
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    padding: 1rem 2rem !important;
+    background-color: var(--bs-back);
+}
+
+.nav-item {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem; 
+}
+
+.nav-item>.nav-link {
+    color: var(--bs-fore);
+    text-transform: uppercase;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    position: relative;
+}
+
+.nav-item>.nav-link.active {
+    font-weight: bold;
+}
+
+.nav-item>.nav-link.active::after, .nav-link:hover:after{
+    position: absolute;
+    content: "";
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 2px;
+    background-color: var(--bs-primary);
+    border-radius: 4px;
+}
+
+section {
+    padding: 2.6rem;
+}
+
+.wrapper {
+    padding: 0.8rem;
+}
+
+.card {
+    min-height: 300px;
+    background-color: #121212;
+}
+a{
+    text-decoration: none;
+}
+.searchbar {
+    width: 100%;
+    background-color: var(--bs-fore);
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+.searchbar>input {
+    border: none;
+    width: 100%;
+    background-color: transparent;
+}
+.searchbar>button {
+    background-color: transparent;
+    border: none;
+    padding-right: 0.5rem;
+}
+
+.heroname{
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--bs-fore);
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    .nav-item>.nav-link.active::after, .nav-link:hover:after{
+        width: 100%;
+    }
+    section {
+        padding: 1.4rem;
+    }
+        
+    .wrapper {
+        padding: 1rem 0.4rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .navbar{
+        padding: 0.8rem !important;
+    }
+    ul.navbar-nav {
+        margin-top: 1.6rem;
+    }
+    .nav-item {
+        margin: 0;
+    }
+
+}
