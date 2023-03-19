@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.roller::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+}
+
+
+.main-box{
+    position: relative;
+    box-sizing: border-box;
+    height: 88.5vh;
+    width: 100%;
+    perspective: 500px;
+    overflow: hidden;
+}
+.a{
+   
+    width: 10000px;
+    height: 100%;
+    
+}
+.roller{
+    height: 100%;
+    width: 200vw;
+    transform: rotateY(15deg);
+    transform-origin: 0%;
+    transform-style: preserve-3d;
+    overflow-y: visible;
+    overflow-x: scroll;
+    border: 30px solid transparent;
+    padding: 15px;
+    border-image: url(./filmstrip_PNG89.png) 110 round;
+    box-sizing: border-box;
+}
+.year{
+    text-align: center;
+    background-color: white;
+    text-align: center;
+    font-weight: 700;
+    margin: 5px 0px;
+}
+
+.movie-box{
+    height: 95%;
+    width: auto;
+    display: inline-block;
+}
+.mcu-time{
+    color: var(--bs-primary);
+    position: absolute;
+    right: 0;
+    margin: 20px 50px;
+    font-size: 3rem;
+    border-bottom: 2px solid white;
+}
+@media  screen and (max-width:1000px){
+    .mcu-time{
+        display: none;
+    }
+}
+

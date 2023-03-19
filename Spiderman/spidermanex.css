@@ -1,0 +1,19 @@
+html{
+    cursor:url(spiderman-cursor.png),auto;
+}
+*{
+    box-sizing: border-box;
+}
+#heroimgspider{
+    width: 300px;
+
+    height: auto;
+}
+.heroback{
+    background-color: aliceblue;
+    width: 100%;
+    height: auto;
+}
+#left{
+    display: inline-block;
+}

@@ -1,0 +1,38 @@
+* {
+    color: #fff;
+}
+
+.movie-card-container{
+    padding: 1rem;
+}
+section{
+    background-color: rgb(242, 242, 242);
+}
+.movie-card {
+    background-color: rgb(254, 252, 252);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: inset -5px -5px 10px rgb(156, 155, 155),0px -5px 4px rgb(139, 138, 138);
+ 
+}
+
+.movie-desc {
+    padding: 1rem ;
+}
+
+.movie-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.movie-info {
+    margin-top: 1rem;
+    color: black;
+}
+.movie-link {
+    color: black;
+    text-decoration: underline;
+}
+.movie-link:hover {
+    color: black;
+}
